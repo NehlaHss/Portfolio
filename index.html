@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Houssous Nehla Baha — Portfolio</title>
+  <meta name="description" content="Professional portfolio of Houssous Nehla Baha — ISIL Information Systems & Software Engineering graduate, Full-Stack Web Developer, IT Trainer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barre de progression de lecture -->
+  <div id="scrollProgress"></div>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="nav">
+    <div class="wrap nav-inner">
+      <a href="#hero" class="brand">Houssous <em>Nehla Baha</em></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#certificates">Certificates &amp; Badges</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="assets/cv1.pdf" target="_blank" rel="noopener" class="nav-cta">
+        Download CV ↓
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about"        onclick="closeMobile()">About</a>
+    <a href="#skills"       onclick="closeMobile()">Skills</a>
+    <a href="#projects"     onclick="closeMobile()">Projects</a>
+    <a href="#cv"           onclick="closeMobile()">CV</a>
+    <a href="#certificates" onclick="closeMobile()">Certificates &amp; Badges</a>
+    <a href="#gallery"      onclick="closeMobile()">Gallery</a>
+    <a href="#contact"      onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+
+    <div class="wrap hero-grid">
+      <!-- Left column -->
+      <div>
+        <div class="hero-eyebrow">
+          <span class="label">Professional Portfolio</span>
+        </div>
+
+        <h1 class="display hero-h1">
+          Houssous<br>
+          <em>Nehla Baha</em>
+        </h1>
+
+        <p class="hero-sub">
+          Information Systems and Software Engineering (ISIL) graduate — Full-Stack Web Developer &amp; IT Trainer.
+        </p>
+
+        <div class="hero-badges">
+          <span class="hero-badge">ISIL Graduate</span>
+          <span class="hero-badge">Full-Stack Web Developer</span>
+          <span class="hero-badge trainer">IT Trainer</span>
+          <span class="hero-badge">Petroleum Club Skikda</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Projects →</a>
+          <a href="#certificates" class="btn-ghost">Certificates &amp; Badges</a>
+          <a href="#contact" class="btn-ghost">Contact</a>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div>
+        <div class="hero-portrait-card" id="heroPortrait">
+          <img src="assets/profile.jpg" alt="Houssous Nehla Baha" onerror="this.parentElement.innerHTML='<div class=\'portrait-placeholder\'><span class=\'icon-ph\'>👤</span><p>Add your photo here:<br><strong>assets/profile.jpg</strong></p></div>'">
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong data-certs-count>+15</strong>
+            <span>Certificates</span>
+          </div>
+          <div class="hero-stat">
+            <strong data-badges-count>+10</strong>
+            <span>Badges</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">Scroll</div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section class="sec" id="about">
+    <div class="wrap">
+      <div class="sec-header reveal">
+        <span class="label">About</span>
+        <div class="line-accent"></div>
+        <h2 class="display">Who I am<br>&amp; what drives me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Information Systems and Software Engineering (ISIL) graduate, I am a Web Developer passionate about creating practical, high-performance, and user-focused digital solutions.
+          </p>
+          <p>
+            Alongside my technical projects, I have also gained experience as an IT Trainer, sharing my knowledge across various technology fields. My three-year journey with Petroleum Club Skikda, from HR Member to Vice President of Internal Relations, has strengthened my leadership, teamwork, communication, and event management skills.
+          </p>
+          <p>
+            I'm always open to new opportunities, collaborations, and innovative projects where I can continue learning, building, and creating value through technology.
+          </p>
+        </div>
+
+        <div class="about-right reveal reveal-delay-1">
+          <div class="bento-card">
+            <div class="bento-icon">💻</div>
+            <h3>Web development</h3>
+            <p>Full-stack projects focused on practical, high-performance, and user-focused digital solutions.</p>
+          </div>
+          <div class="bento-card">
+            <div class="bento-icon">🎓</div>
+            <h3>IT training</h3>
+            <p>Sharing technical knowledge across web development, applied AI, and digital technologies.</p>
+          </div>
+          <div class="bento-card">
+            <div class="bento-icon">🏛️</div>
+            <h3>Leadership &amp; teamwork</h3>
+            <p>Three years at Petroleum Club Skikda, from HR Member to Vice President of Internal Relations.</p>
+          </div>
+          <div class="bento-card">
+            <div class="bento-icon">🤝</div>
+            <h3>Always building</h3>
+            <p>Open to new opportunities, collaborations, and innovative projects that create value through technology.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS
+  ============================================================ -->
+  <section class="sec" id="skills">
+    <div class="wrap">
+      <div class="sec-header reveal">
+        <span class="label">Skills</span>
+        <div class="line-accent"></div>
+        <h2 class="display">Hard skills &amp;<br>soft skills</h2>
+        <p>A structured overview of the technical, organizational, and transferable skills developed through studies, projects, training, and student leadership experiences.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-panel reveal">
+          <h3>Hard Skills</h3>
+          <div class="tags-wrap">
+            <span class="tag">Full-Stack Web Development</span>
+            <span class="tag">Front-End</span>
+            <span class="tag">Back-End</span>
+            <span class="tag">Responsive Design</span>
+            <span class="tag">HTML / CSS / JS</span>
+            <span class="tag">Solutions Digitales</span>
+            <span class="tag">Information Systems</span>
+            <span class="tag">Software Engineering</span>
+            <span class="tag">Applied AI</span>
+            <span class="tag">Databases</span>
+            <span class="tag">Networking (basics)</span>
+            <span class="tag">IT Training &amp; Facilitation</span>
+            <span class="tag">Workshop Design</span>
+            <span class="tag">Conception Visuelle</span>
+            <span class="tag">Social Media Content</span>
+            <span class="tag">Video Editing</span>
+            <span class="tag">Event Planning</span>
+            <span class="tag">Digital Management Tools</span>
+          </div>
+        </div>
+
+        <div class="skill-panel reveal reveal-delay-1">
+          <h3>Soft Skills</h3>
+          <div class="tags-wrap">
+            <span class="tag">Leadership</span>
+            <span class="tag">Communication</span>
+            <span class="tag">Teamwork</span>
+            <span class="tag">Organisation</span>
+            <span class="tag">Creativity</span>
+            <span class="tag">Adaptability</span>
+            <span class="tag">Sense of responsibility</span>
+            <span class="tag">Time management</span>
+            <span class="tag">Problem solving</span>
+            <span class="tag">Rigueur</span>
+            <span class="tag">Team coordination</span>
+            <span class="tag">Mentoring</span>
+            <span class="tag">Planification</span>
+            <span class="tag">Task distribution</span>
+            <span class="tag">Recruitment coordination</span>
+            <span class="tag">Event coordination</span>
+            <span class="tag">Knowledge sharing</span>
+            <span class="tag">Professional conduct</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS
+  ============================================================ -->
+  <section class="sec" id="projects">
+    <div class="wrap">
+      <div class="sec-header reveal">
+        <span class="label">Projects</span>
+        <div class="line-accent"></div>
+        <h2 class="display">Projets web &amp;<br>réalisations digitales</h2>
+        <p><span data-projects-count>+10</span> projets web réalisés — sites, plateformes et outils digitaux.</p>
+
+        <!-- Liste complète des projets (générée automatiquement) -->
+        <div class="projects-intro-list">
+          <p class="intro-label">Liste de mes projets :</p>
+          <ol id="projectsList"></ol>
+        </div>
+
+        <!-- GitHub + contact, une seule fois -->
+        <div class="links-row">
+          <a href="#" data-github target="_blank" rel="noopener" class="gh-link">
+            ⌥ Voir mes projets sur GitHub
+          </a>
+          <span class="muted-note">Pour plus de détails, contactez-moi.</span>
+        </div>
+      </div>
+
+      <!-- Démonstrations : photo + nom + PDF, générées automatiquement -->
+      <div style="margin-bottom:20px;">
+        <p class="label">Démonstrations</p>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CV / EXPERIENCE
+  ============================================================ -->
+  <section class="sec" id="cv">
+    <div class="wrap">
+      <div class="sec-header reveal">
+        <span class="label">Parcours</span>
+        <div class="line-accent"></div>
+        <h2 class="display">CV &amp; experience</h2>
+      </div>
+
+      <div class="cv-layout">
+        <!-- Timeline -->
+        <div class="timeline reveal">
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <p class="tl-date">5 mois — Présent</p>
+            <h3>Prof Informatique &amp; Mentor STEAM</h3>
+            <p class="tl-org">World Learning Algeria &amp; American Corner Constantine — Programme certifié par l'Ambassade des États-Unis</p>
+            <p class="tl-desc">
+              Conception et animation de sessions de formation en développement web, IA appliquée et technologies numériques. Vulgarisation de concepts techniques auprès de publics variés (CEM, Lycée, Université) via une pédagogie claire et adaptée. Mentorat individuel et collectif d'étudiants, avec gestion de groupes et suivi de progression pédagogique.
+            </p>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <p class="tl-date">2026</p>
+            <h3>Stagiaire IT</h3>
+            <p class="tl-org">SONATRACH</p>
+            <p class="tl-desc">
+              Stage académique au sein du département informatique, avec une exposition aux infrastructures IT industrielles et aux pratiques professionnelles du secteur.
+            </p>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <p class="tl-date">2023 — 2026</p>
+            <h3>Licence Informatique — ISIL</h3>
+            <p class="tl-org">Information Systems and Software Engineering — Skikda, Algérie</p>
+            <p class="tl-desc">
+              Systèmes d'Information et Software Engineering, avec des compétences en développement web, bases de données, réseaux et gestion de projets informatiques. Diplômée en 2026.
+            </p>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <h3>Vice-Présidente des Relations Internes</h3>
+            <p class="tl-org">Petroleum Club Skikda</p>
+            <p class="tl-desc">
+              Coordination de la cohésion interne, supervision de l'engagement des membres, soutien aux départements internes et contribution à la planification et l'exécution des grands événements.
+            </p>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <h3>Cheffe du Département Ressources Humaines</h3>
+            <p class="tl-org">Petroleum Club Skikda</p>
+            <p class="tl-desc">
+              Mise en place de nouvelles méthodes de travail, amélioration de la coordination d'équipe, suivi des membres et structuration des processus RH internes.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CV Card -->
+        <div class="cv-card reveal reveal-delay-1">
+          <h3>Télécharger mon CV</h3>
+          <p>Accédez à la version complète de mon curriculum vitae, au CV Club spécial et au certificat d'adhésion.</p>
+          <div class="cv-btn-stack">
+            <a href="assets/cv1.pdf" target="_blank" rel="noopener" class="cv-dl-btn">
+              <div class="cv-dl-icon">📄</div>
+              <div>
+                <strong style="display:block;font-size:0.88rem;margin-bottom:2px;">CV Principal</strong>
+                <span style="font-size:0.78rem;color:var(--muted);">cv1.pdf</span>
+              </div>
+            </a>
+            <a href="assets/cv2.pdf" target="_blank" rel="noopener" class="cv-dl-btn">
+              <div class="cv-dl-icon">🏅</div>
+              <div>
+                <strong style="display:block;font-size:0.88rem;margin-bottom:2px;">CV Club Spécial</strong>
+                <span style="font-size:0.78rem;color:var(--muted);">cv2.pdf</span>
+              </div>
+            </a>
+            <a href="assets/cad.pdf" target="_blank" rel="noopener" class="cv-dl-btn">
+              <div class="cv-dl-icon">📋</div>
+              <div>
+                <strong style="display:block;font-size:0.88rem;margin-bottom:2px;">Certificat d'Adhésion</strong>
+                <span style="font-size:0.78rem;color:var(--muted);">cad.pdf</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/nehla-baha-houssous-30846b2a1" target="_blank" rel="noopener" class="cv-dl-btn">
+              <div class="cv-dl-icon" style="background: rgba(10,102,194,0.10); color:#0a66c2;">in</div>
+              <div>
+                <strong style="display:block;font-size:0.88rem;margin-bottom:2px;">LinkedIn</strong>
+                <span style="font-size:0.78rem;color:var(--muted);">Voir profil complet</span>
+              </div>
+            </a>
+            <a href="#" data-github target="_blank" rel="noopener" class="cv-dl-btn">
+              <div class="cv-dl-icon" style="background: rgba(31,45,61,0.06); color:var(--text);">⌥</div>
+              <div>
+                <strong style="display:block;font-size:0.88rem;margin-bottom:2px;">GitHub</strong>
+                <span style="font-size:0.78rem;color:var(--muted);">Voir mes dépôts</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICATES CAROUSEL
+  ============================================================ -->
+  <section class="sec carousel-section" id="certificates">
+    <div class="wrap">
+      <div class="sec-header reveal">
+        <span class="label">Certificates</span>
+        <div class="line-accent"></div>
+        <h2 class="display">Diplômes &amp;<br>Certificates</h2>
+        <p id="certsParagraph">Certificats couvrant les réussites académiques, les formations, les stages et la participation à des événements nationaux et internationaux.</p>
+      </div>
+
+      <div class="carousel-wrap reveal">
+        <div class="carousel-track" id="certTrack"></div>
+        <div class="carousel-controls">
+          <div class="carousel-dots" id="certDots"></div>
+          <div class="carousel-arrows">
+            <button class="carousel-arrow" onclick="scrollCarousel('certTrack','certDots',-1)" aria-label="Previous">←</button>
+            <button class="carousel-arrow" onclick="scrollCarousel('certTrack','certDots',1)"  aria-label="Next">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BADGES CAROUSEL
+  ============================================================ -->
+  <section class="sec carousel-section" id="badges">
+    <div class="wrap">
+      <div class="sec-header reveal">
+        <span class="label">Badges</span>
+        <div class="line-accent"></div>
+        <h2 class="display">Recognition<br>badges</h2>
+        <p id="badgesParagraph">Badges liés à l'organisation, au leadership et à l'engagement étudiant.</p>
+      </div>
+
+      <div class="carousel-wrap reveal">
+        <div class="carousel-track" id="badgeTrack"></div>
+        <div class="carousel-controls">
+          <div class="carousel-dots" id="badgeDots"></div>
+          <div class="carousel-arrows">
+            <button class="carousel-arrow" onclick="scrollCarousel('badgeTrack','badgeDots',-1)" aria-label="Previous">←</button>
+            <button class="carousel-arrow" onclick="scrollCarousel('badgeTrack','badgeDots',1)"  aria-label="Next">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALLERY CAROUSEL
+  ============================================================ -->
+  <section class="sec carousel-section" id="gallery">
+    <div class="wrap">
+      <div class="sec-header reveal">
+        <span class="label">Gallery</span>
+        <div class="line-accent"></div>
+        <h2 class="display">Moments &amp;<br>experiences</h2>
+        <p>A selection of photos reflecting event participation, training activities, leadership roles, and academic milestones.</p>
+      </div>
+
+      <div class="carousel-wrap reveal">
+        <div class="carousel-track" id="galleryTrack"></div>
+        <div class="carousel-controls">
+          <div class="carousel-dots" id="galleryDots"></div>
+          <div class="carousel-arrows">
+            <button class="carousel-arrow" onclick="scrollCarousel('galleryTrack','galleryDots',-1)" aria-label="Previous">←</button>
+            <button class="carousel-arrow" onclick="scrollCarousel('galleryTrack','galleryDots',1)"  aria-label="Next">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section class="sec" id="contact">
+    <div class="wrap">
+      <div class="sec-header reveal">
+        <span class="label">Contact</span>
+        <div class="line-accent"></div>
+        <h2 class="display">Get in touch</h2>
+        <p>For internships, academic opportunities, collaborative projects, or professional contact.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <div class="contact-links reveal">
+            <a href="mailto:nehlabaha7@gmail.com" class="contact-link">
+              <div class="contact-icon">@</div>
+              <div class="contact-link-info">
+                <strong>Email</strong>
+                <span>nehlabaha7@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/nehla-baha-houssous-30846b2a1" target="_blank" rel="noopener" class="contact-link">
+              <div class="contact-icon" style="background: rgba(10,102,194,0.10); color:#0a66c2;">in</div>
+              <div class="contact-link-info">
+                <strong>LinkedIn</strong>
+                <span>nehla-baha-houssous</span>
+              </div>
+            </a>
+            <a href="#" data-github target="_blank" rel="noopener" class="contact-link">
+              <div class="contact-icon" style="background: rgba(31,45,61,0.06); color:var(--text);">⌥</div>
+              <div class="contact-link-info">
+                <strong>GitHub</strong>
+                <span>Voir mes dépôts</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-summary reveal reveal-delay-1">
+          <h3>Résumé du portfolio</h3>
+          <div class="summary-item">
+            <div class="dot"></div>
+            <span>Licence Informatique ISIL — Diplômée 2026</span>
+          </div>
+          <div class="summary-item">
+            <div class="dot"></div>
+            <span>3 ans de leadership étudiant au Petroleum Club Skikda</span>
+          </div>
+          <div class="summary-item">
+            <div class="dot"></div>
+            <span><span data-certs-count>+15</span> certificats et <span data-badges-count>+10</span> badges de reconnaissance</span>
+          </div>
+          <div class="summary-item">
+            <div class="dot"></div>
+            <span><span data-projects-count>+10</span> projets web réalisés</span>
+          </div>
+          <div class="summary-item">
+            <div class="dot"></div>
+            <span>Participation à des événements nationaux et internationaux</span>
+          </div>
+          <div class="summary-item">
+            <div class="dot"></div>
+            <span>Formatrice en informatique, IA appliquée et technologies numériques</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <div class="wrap footer-inner">
+      <p>© Houssous Nehla Baha · ISIL Software Engineering · Portfolio</p>
+      <a href="#hero">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script src="script.js"></script>
+</body>
+</html>
